@@ -1,0 +1,40 @@
+/*colors aqua:#087E8B orange:#E57A44 purple:#422040 black: #333 white:#F5F5F5*/
+
+@media only screen and (min-width: 64em) {
+    
+    section.forecast { display: contents }  /* show the 10-day forecast with the medium view and up */
+
+
+/*navagation*/
+    nav button { display: none;}
+
+    ul {
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+        overflow: hidden;
+        background-color: #333;
+    }
+
+
+    li {
+        float: left;
+    }
+
+    li a {
+        display: block;
+        color: white;
+        text-align: center;
+        padding: 14px 16px;
+        text-decoration: none;
+    }
+
+    li a:hover:not(.active) {
+        background-color: #111;
+    }
+
+    .active {
+        background-color: #E57A44;
+    }
+
+}
