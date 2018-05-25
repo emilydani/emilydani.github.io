@@ -2,7 +2,7 @@
 
 @media only screen and (min-width: 64em) {
     
-    section.forecast { display: contents }  /* show the 10-day forecast with the medium view and up */
+    section.forecast { display:table}  /* show the 10-day forecast with the medium view and up */
 
 
 /*navagation*/
@@ -36,5 +36,31 @@
     .active {
         background-color: #E57A44;
     }
+    header, nav, main, footer {
+    max-width: 1100px;
+    margin: auto;
+    }
+/*table*/ 
+    #customers {
+    border-collapse: collapse;
+    width: 100%;
+}
+
+#customers td, #customers th {
+    border: 1px solid #ddd;
+    padding: 8px;
+}
+
+#customers tr:nth-child(even){background-color: #F5F5F5;}
+
+#customers tr:hover {background-color: #F5F5F5;}
+
+#customers th {
+    padding-top: 12px;
+    padding-bottom: 12px;
+    text-align: left;
+    background-color: #533875;
+    color: white;
+}
 
 }

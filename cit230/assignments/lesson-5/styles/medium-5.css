@@ -7,6 +7,11 @@
     
     section.forecast { display: table }  /* show the 10-day forecast with the medium view and up */
     
+    header, nav, main, footer {
+    max-width: 1100px;
+    margin: auto;
+    }
+    
 /*navagation*/
     nav button { display:none; }  /* hamburger button does not need to be shown in the medium on up views */
     
@@ -38,6 +43,29 @@
         background-color: #E57A44;
     }
    
+/*table*/     
+    #customers {
+    border-collapse: collapse;
+}
+
+#customers td, #customers th {
+    border: 1px solid #ddd;
+    padding: 10px;
+    text-align: center;
+}
+
+#customers tr:nth-child(even){background-color: #F5F5F5;}
+
+#customers tr:hover {background-color: #F5F5F5;}
+
+#customers th {
+    padding-top: 12px;
+    padding-bottom: 12px;
+    text-align: center;
+    background-color: #333;
+    color: white;
+    
+}
     
     
   }

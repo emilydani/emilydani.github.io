@@ -1,39 +1,116 @@
 /*colors aqua:#087E8B orange:#E57A44 purple:#422040 black: #333 white:#F5F5F5*/
 
 /* Delete these CSS comments after reading. */
+
 /* This main css file contains the default rules and is geared toward the small/phone view */
 
-* { box-sizing: border-box;}  /* This wildcard applies to all elements ensuring a box layout model */
+* {
+    box-sizing: border-box;
+}
 
-.forecast{
+/* This wildcard applies to all elements ensuring a box layout model */
+
+.forecast {
     display: none;
 }
 
 body {
-  font-size: 16px;
-  font-family: bahnschrift, arial, sans;  
+    font-size: 16px;
+    font-family: bahnschrift, arial, sans;
 }
 
-header, nav, main, footer { /* the comma between the selectors means apply the following CSS declarations to all of the listed elements */
-  max-width: 1000px; /* Declare the maximum width and other main element rules to limit the stretch on larger/wider views */
+header,
+nav,
+main,
+footer {
+    max-width: 1100px;
+    margin: auto;
 }
 
 header {}
-header h1 {}
+
+header h1 {
+    /*I don'y have anything I need to style here yet*/
+}
+
 header img {}
-header .subheading {}
+
+header,
+.subheading {
+    margin-left: 2em;
+    margin-right: 2em;
+}
+
+.subheading {
+    margin-top: -1.25em;
+    margin-bottom: -.65em;
+}
 
 nav {}
-nav button {}
-nav ul {}
+
+nav button {
+    border: #333;
+    background: #E57A44;
+}
+
+
+nav ul {
+    /*these are on the other two css files*/
+}
+
 nav ul li {}
+
 nav ul li a {}
+
 nav ul li.active a {}
+
 nav ul li a:hover {}
 
-main {}
-main h2 {}
-main figure { margin: 0 0 .2rem 2%; width:96%; }
-main figure img { }
+main {
+    margin-left: 2em;
+    margin-right: 2em;
+}
 
-footer {}
+main h2 {
+    font-size: 2.5em;
+    text-align: center;
+    margin-bottom: -.25em;
+}
+
+main figure {
+    margin: 0 0 .2rem;
+    width: 100%;
+}
+
+main figure img {
+    width: 100%
+}
+
+footer {
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #333;
+    color: #F5F5F5;
+    text-align: center;
+}
+
+.weather-summary {
+    display: flex;
+    width: 100%;
+}
+
+.weather-summary > div {
+    margin: 10px;
+    padding: 30px;
+    font-size: 1.3em;
+}
+
+.sun {
+    width: 90%;
+}
+
+.cloud {
+    width: 200px;
+    float:right;
+}
