@@ -1,6 +1,5 @@
 /*colors aqua:#087E8B orange:#E57A44 purple:#422040 black: #333 white:#F5F5F5*/
 
-/* Delete these CSS comments after reading. */
 
 /* This main css file contains the default rules and is geared toward the small/phone view */
 
@@ -10,7 +9,7 @@
 
 /* This wildcard applies to all elements ensuring a box layout model */
 
-.forecast {
+section.forecast {
     display: none;
 }
 
@@ -125,4 +124,8 @@ footer {
 
 .pad {
     margin-left:.5em;
+}
+
+h3 {
+    font-size: 1.3em;
 }

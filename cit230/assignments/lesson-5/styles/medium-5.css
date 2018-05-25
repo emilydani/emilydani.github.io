@@ -5,7 +5,7 @@
     /* Only CSS write declarations that need to be changed. Do not duplicated declarations that are already established in the main.css */
     
     
-    section.forecast { display: table }  /* show the 10-day forecast with the medium view and up */
+    section.forecast { display: block}  /* show the 10-day forecast with the medium view and up */
     
     header, nav, main, footer {
     max-width: 1100px;
@@ -13,7 +13,8 @@
     }
     
 /*navagation*/
-    nav button { display:none; }  /* hamburger button does not need to be shown in the medium on up views */
+    nav button { display:none; }  
+    /* hamburger button does not need to be shown in the medium on up views */
     
     ul {
     list-style-type: none;
