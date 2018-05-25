@@ -14,9 +14,12 @@
     display: none;
 }
 
-body {
-    font-size: 16px;
+h2, h1, header, nav, h3, footer {
     font-family: bahnschrift, arial, sans;
+}
+
+p, table {
+    font-family: arial, sans;
 }
 
 header,
@@ -102,7 +105,7 @@ footer {
 
 .weather-summary > div {
     margin: 10px;
-    padding: 30px;
+    padding: 20px;
     font-size: 1.3em;
 }
 
@@ -113,4 +116,13 @@ footer {
 .cloud {
     width: 200px;
     float:right;
+    margin-left: 1em;
+}
+.padd {
+    margin-left: 1em;
+    margin-right:1em;
+}
+
+.pad {
+    margin-left:.5em;
 }
