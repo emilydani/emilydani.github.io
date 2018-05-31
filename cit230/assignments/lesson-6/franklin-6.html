@@ -22,19 +22,28 @@
 
   <nav>
    <button>&#9776;</button>
-    <ul>
+    <ul class ="topnav" id="myTopnav">
     	<li><a href="#">Home</a></li>
     	<li><a class="active" href="#">Franklin</a></li>
     	<li><a href="#">Greenville</a></li>
     	<li><a href="#">Springfield</a></li>
     	<li><a href="#">Storm Center</a></li>
     	<li><a href="#">Gallery</a></li>
+    	<a href="javascript:void(0);" class="icon" onclick="myFunction()">
+        <i class="fa fa-bars"></i>
+  </a>
     </ul>		
   </nav>
     
   <main>
     <figure>
-        <img src="imges/figure.jpg" alt="pine trees with birds">
+        <img src="imges/figure.jpg"
+          alt="pine trees with birds" sizes="100vw" 
+        srcset=
+            "imges/small-figure.jpg" 200w, 
+            "imges/meduim-figure.jpg" 500w, 
+            "imges/large-figure.jpg" 1100w
+        >
     </figure>
     <h2>Franklin Weather</h2>
              
@@ -109,10 +118,24 @@
       123 Main St. Anytown, US 99999
       Google Map
     </section>
-    <section class="footer-bar">&copy;2018 | All Rights Reserved | Accurate Weather | <span id="currentdate">Current Date Placeholder</span>
+    <section class="footer-bar">&copy;2018 | All Rights Reserved | Accurate Weather | <text id="demo"></text>, 2018 
+
+
     </section>
     </div>
   </footer>
 
+<script src="script/current-date.js"></script>
+
+<script>
+function myFunction() {
+    var x = document.getElementById("myTopnav");
+    if (x.className === "topnav") {
+        x.className += " responsive";
+    } else {
+        x.className = "topnav";
+    }
+}
+</script>
 </body>
 </html>
