@@ -1,0 +1,130 @@
+/*colors aqua:#087E8B orange:#E57A44 purple:#422040 black: #333 white:#F5F5F5*/
+
+
+/* This main css file contains the default rules and is geared toward the small/phone view */
+
+* {
+    box-sizing: border-box;
+}
+
+/* This wildcard applies to all elements ensuring a box layout model */
+
+section.forecast {
+    display: none;
+}
+
+h2, h1, header, nav, h3, footer {
+    font-family: 'IBM Plex Sans', bahnschrift, arial, sans;
+}
+
+p, table {
+    font-family: arial, sans;
+}
+
+header,
+nav,
+main,
+footer {
+    max-width: 1100px;
+    margin: auto;
+}
+
+header {}
+
+header h1 {
+    /*I don'y have anything I need to style here yet*/
+}
+
+header img {}
+
+header,
+.subheading {
+    margin-left: 2em;
+    margin-right: 2em;
+}
+
+.subheading {
+    margin-top: -1.25em;
+}
+
+nav {}
+
+nav button {
+    border: #333;
+    background: #E57A44;
+}
+
+
+nav ul {
+    /*these are on the other two css files*/
+}
+
+nav ul li {}
+
+nav ul li a {}
+
+nav ul li.active a {}
+
+nav ul li a:hover {}
+
+main {
+    margin-left: 2em;
+    margin-right: 2em;
+}
+
+main h2 {
+    font-size: 2.5em;
+    text-align: center;
+    margin-bottom: -.25em;
+}
+
+main figure {
+    margin: 0 0 .2rem;
+    width: 100%;
+}
+
+main figure img {
+    width: 100%
+}
+
+footer {
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #333;
+    color: #F5F5F5;
+    text-align: center;
+}
+
+.weather-summary {
+    display: flex;
+    width: 100%;
+}
+
+.weather-summary > div {
+    margin: 10px;
+    padding: 20px;
+    font-size: 1.3em;
+}
+
+.sun {
+    width: 85%;
+}
+
+.cloud {
+    width: 200px;
+    float:right;
+    margin-left: 1em;
+}
+.padd {
+    margin-left: 1em;
+    margin-right:1em;
+}
+
+.pad {
+    margin-left:.5em;
+}
+
+h3 {
+    font-size: 1.3em;
+}

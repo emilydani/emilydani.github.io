@@ -1,0 +1,72 @@
+/*colors aqua:#087E8B orange:#E57A44 purple:#422040 black: #333 white:#F5F5F5*/
+
+@media only screen and (min-width: 37.5em){
+
+    /* Only CSS write declarations that need to be changed. Do not duplicated declarations that are already established in the main.css */
+    
+    
+    section.forecast { display: block}  /* show the 10-day forecast with the medium view and up */
+    
+    header, nav, main, footer {
+    max-width: 1100px;
+    margin: auto;
+    }
+    
+/*navagation*/
+    nav button { display:none; }  
+    /* hamburger button does not need to be shown in the medium on up views */
+    
+    ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #333;
+    }
+
+    li {
+        float: left;
+    }
+
+    li a {
+        display: block;
+        color: #F5F5F5;
+        text-align: center;
+        padding: 14px 16px;
+        text-decoration: none;
+    }
+
+    li a:hover:not(.active) {
+        background-color: #111;
+    }
+
+    .active {
+        background-color: #E57A44;
+    }
+   
+/*table*/     
+    #customers {
+    border-collapse: collapse;
+}
+
+#customers td, #customers th {
+    border: 1px solid #ddd;
+    padding: 10px;
+    text-align: center;
+}
+
+#customers tr:nth-child(even){background-color: #F5F5F5;}
+
+#customers tr:hover {background-color: #F5F5F5;}
+
+#customers th {
+    padding-top: 12px;
+    padding-bottom: 12px;
+    text-align: center;
+    background-color: #333;
+    color: white;
+    
+}
+    
+    
+  }
