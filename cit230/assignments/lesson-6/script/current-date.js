@@ -6,6 +6,4 @@ var monName = new Array("January", "February", "March", "April", "May", "June", 
 
 var dtString = dayName[now.getDay()] + ", " + monName[now.getMonth()] + " " + now.getDate();
 
-var d = getFullYear();
-
 document.getElementById("demo").innerHTML = dtString;
