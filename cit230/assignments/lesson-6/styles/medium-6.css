@@ -13,6 +13,8 @@
         max-width: 1100px;
         margin: auto;
     }
+    
+
 
     /*navagation*/
     nav button {
@@ -62,6 +64,8 @@
 
     .active {
         background-color: #E57A44;
+        padding-left: 1em;
+        padding-right: 1em;
     }
     /*table*/
     #customers {
@@ -92,9 +96,7 @@
 
     }
     footer {
-        margin: 0;
-        padding: 0;
-        overflow: hidden;
+        padding: .5em;
         background-color: #333;
         color: #F5F5F5;
         text-align: center;
