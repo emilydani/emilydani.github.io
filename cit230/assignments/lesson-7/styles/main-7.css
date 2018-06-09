@@ -174,7 +174,6 @@ h1 {
     main h2 {
         font-size: 2.5em;
         text-align: center;
-        margin-bottom: -.25em;
     }
 
     main figure {
@@ -192,6 +191,8 @@ h1 {
         background-color: #333;
         color: #F5F5F5;
         text-align: center;
+        margin-left: 2em;
+        margin-right: 2em;
     }
 
     .weather-summary {
@@ -214,14 +215,29 @@ h1 {
         float: right;
         margin-left: 1em;
     }*/
-    .cloud {
-        display: flex;
-    }
     
-    .c {
-        margin-left: 1em;
-        margin-bottom: 1em;
-        margin-top: 1em;
+    .cloud {
+	display: flex;
+	flex-direction: row;
+    min-width: 25em;
+    margin: 10px auto;
+    }
+
+    .al {
+        text-align: left;
+    }
+
+    .ak {
+        padding-right: 1em;
+        width: 210px;
+    }
+
+    .headings {
+        flex: auto;
+        display: flex;
+        flex-direction: column;
+        align-items: left;
+        justify-content: left;
     }
 
     .padd {
@@ -239,4 +255,23 @@ h1 {
 
     .ran {
         max-width: 1100px;
+    }
+    
+    .grid {
+        display: grid;
+        grid-template-columns: 1fr;
+        align-content: center;
+    }
+    
+    .grid img {
+        width: 90%; 
+        padding-bottom: 1em;
+        padding-top: 1em;
+        padding-left: 1em;
+        align-content: center;
+    }
+    
+    .im:hover {
+        box-shadow: 4px 4px 9px grey;
+        opacity: .5;
     }
