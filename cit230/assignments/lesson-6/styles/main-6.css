@@ -54,7 +54,7 @@ header,
 nav {}
 
 nav button {
-    margin .2rem 2%;
+    margin: .2rem 2%;
     border: #333;
     font-size: 1.6rem;
     color:#555;
@@ -231,3 +231,6 @@ h1 {
     .ran {
         max-width: 1100px;
     }
+    
+    
+}
