@@ -6,13 +6,13 @@ tr, td, th {
 
 table {
     font-family: 'Ubuntu', sans-serif;
-    border: 1px solid black;
+    border: 1px solid grey;
     border-collapse: collapse;
 }
 
 tr:nth-child(1) {
     font-size: 1.1em;
-    font-weight: 900;
+    font-weight: 1000;
 }
 
 tr:nth-child(even) {
@@ -33,6 +33,7 @@ tr:nth-child(7) {
 
 thead {
     font-size: 23px;
+    font-weight: bolder;
     background-color: #7fb9c2;
 }
 
@@ -45,4 +46,4 @@ tfoot:first-of-type {
 .blue {
     background-color: #628ca6;
     color: white;
-}/*
+}
