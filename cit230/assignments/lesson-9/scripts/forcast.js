@@ -13,6 +13,7 @@ weatherObject.onload = function() {
     
     var iconcode = weatherInfo.weather[0].icon;
     var icon_path = "https://openweathermao.org/img/w/" + iconcode + ".png";
+    
     document.getElementById('weather_icon').src = icon_path;
     
 }
