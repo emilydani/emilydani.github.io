@@ -283,6 +283,10 @@ h1 {
     .green{
         width:32.5%;
     }
+    
+    .figure {
+        width: 100%;
+    }
 
     
 }
