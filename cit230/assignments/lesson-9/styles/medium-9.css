@@ -150,6 +150,12 @@
     .pad {
         margin-left: .5em;
     }
+    .red {
+        padding-top:
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+    
 
     h3 {
         font-size: 1.3em;
@@ -178,6 +184,16 @@
     .empty {
         margin-left: 1em;
     }
+    
+    .wrap {
+        width: 33%;
+        float: left;
+    }
+    
+    .green{
+        width:32%;
+    }
+
 
 
 }

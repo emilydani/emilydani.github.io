@@ -24,12 +24,12 @@
   <nav class="clearfix">
    <button class="hamburger" onclick="toggleMenu()">&#9776;</button>
     <ul id="primaryNav" class="hide">
-    	<li><a href="#" title="Home">Home</a></li>
-    	<li><a class="active" href="#">Franklin</a></li>
-    	<li><a href="#">Greenville</a></li>
+     	<li><a href="index.html" title="Home">Home</a></li>
+    	<li><a class="active" href="franklin-9.html">Franklin</a></li>
+    	<li><a href="gallery-9.html">Greenville</a></li>
     	<li><a href="#">Springfield</a></li>
-    	<li><a href="#">Storm</a></li>
-    	<li><a href="gallery-7.html">Gallery</a></li>
+    	<li><a href="stormcenter-9.html">Storm</a></li>
+    	<li><a href="gallery-9.html">Gallery</a></li>
     </ul>		
   </nav>
     
@@ -110,6 +110,13 @@
 	</section>
 	</div>
     </article>
+    <section>
+        <h2>Forcast:</h2>
+        <h3>Weather conditions for <span id="place">city</span></h3>
+        <p>Current Temperature is <span id="currentTemp">00</span>&deg;</p>
+        <p>Wind Speed is <span id="currentWind">00</span></p>
+        <img src="imges/small-sun.jpg" alt="current weather" id="weather_icon">
+    </section>
     </section>		  
   
   </main>
@@ -127,5 +134,6 @@
 <script src="scripts/current-date-9.js"></script>
 <script src="scripts/hamburger-9.js"></script>
 <script src="scripts/windchill-9.js"></script>
+<script src="scripts/forcast.js"></script>
 </body>
 </html>

@@ -129,6 +129,12 @@
     .padd {
         margin-right: 1em;
     }
+    
+    .red {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+    
 
     .pad {
         margin-left: 1em;
@@ -160,6 +166,15 @@
     
     .empty {
         margin-left: 1em;
+    }
+    
+    .wrap {
+        width: 33%;
+        float: left;
+    }
+    
+    .pig {
+        width: 400px;
     }
 
 

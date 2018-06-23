@@ -1,63 +1,72 @@
 <!DOCTYPE html>
 <html lang="en-us">
-<head> 
+
+<head>
     <style>
-    @import url('https://fonts.googleapis.com/css?family=IBM+Plex+Sans:700');
+        @import url('https://fonts.googleapis.com/css?family=IBM+Plex+Sans:700');
     </style>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="styles/normalize-9.css">
     <link rel="stylesheet" href="styles/main-9.css">
-    <link rel="stylesheet" href="styles/medium-9.css"> 
+    <link rel="stylesheet" href="styles/medium-9.css">
     <link rel="stylesheet" href="styles/large-9.css">
     <link rel="stylesheet" href="styles/form.css">
+    <link rel="stylesheet" href="styles/index.css">
     <title>Franklin Page</title>
     <meta name="description" content="Weather page for the town Frankin.">
 </head>
+
 <body>
-  <header>
-      <h1 class="pad">Accurate Weather</h1>
-      <p class="subheading">Easy. Simple. Fast. </p>
-  </header>
+    <header>
+        <h1 class="pad">Accurate Weather</h1>
+        <p class="subheading">Easy. Simple. Fast. </p>
+    </header>
 
-  <nav class="clearfix">
-   <button class="hamburger" onclick="toggleMenu()">&#9776;</button>
-    <ul id="primaryNav" class="hide">
-    	<li><a href="#" title="Home">Home</a></li>
-    	<li><a class="active" href="#">Franklin</a></li>
-    	<li><a href="#">Greenville</a></li>
-    	<li><a href="#">Springfield</a></li>
-    	<li><a href="#">Storm</a></li>
-    	<li><a href="gallery-7.html">Gallery</a></li>
-    </ul>		
-  </nav>
-    
+    <nav class="clearfix">
+        <button class="hamburger" onclick="toggleMenu()">&#9776;</button>
+        <ul id="primaryNav" class="hide">
+            <li><a class="active" href="index.html" title="Home">Home</a></li>
+            <li><a href="franklin-9.html">Franklin</a></li>
+            <li><a href="gallery-9.html">Greenville</a></li>
+            <li><a href="#">Springfield</a></li>
+            <li><a href="stormcenter-9.html">Storm</a></li>
+            <li><a href="gallery-9.html">Gallery</a></li>
+        </ul>
+    </nav>
+
     <main>
-    
-    
-      <header>
 
-      </header>
+        <div class="cloud">
+            <div>
+                <h2>Weather Story</h2>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+            </div>
+            <div>
+                <img src="imges/cloud-small.jpg" alt="sun">
+            </div>
+        </div>
+        <section>
 
-      <section>
+        </section>
+        <div>
+            <img class="green" src="imges/cloud.jpg" alt="">
+            <img class="green" src="imges/cloud.jpg" alt="">
+            <img class="green" src="imges/cloud.jpg" alt="">
+        </div>
 
-      </section>
-      
-      
+
     </main>
-  <footer>
-    <div class="padd">
-      Contact information placeholder
-      999.999.9999
-      123 Main St. Anytown, US 99999
-      Google Map
-    &copy;2018 | All Rights Reserved | Accurate Weather | <span id="demo"></span>, 2018
-    </div>
-  </footer>
+    <footer>
+        <div class="padd">
+            Contact information placeholder 999.999.9999 123 Main St. Anytown, US 99999 Google Map &copy;2018 | All Rights Reserved | Accurate Weather | <span id="demo"></span>, 2018
+        </div>
+    </footer>
 
-<script src="scripts/current-date-9.js"></script>
-<script src="scripts/hamburger-9.js"></script>
-<script src="scripts/windchill-9.js"></script>
-<script src="scripts/index.js"></script>
+    <script src="scripts/current-date-9.js"></script>
+    <script src="scripts/hamburger-9.js"></script>
+    <script src="scripts/windchill-9.js"></script>
+    <script src="scripts/index.js"></script>
 </body>
+
 </html>

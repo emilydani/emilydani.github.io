@@ -210,11 +210,10 @@ h1 {
         width: 90%;
     }
 
-    /*.cloud {
-        width: 200px;
-        float: right;
-        margin-left: 1em;
-    }*/
+    .red {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
     
     .cloud {
 	display: flex;
@@ -276,5 +275,15 @@ h1 {
     .empty {
         margin-left: 1em;
     }
+    
+    .wrap {
+        width: 33%;
+        float: left;
+    }
+    
+    .green{
+        width:32.5%;
+    }
+
     
 }
