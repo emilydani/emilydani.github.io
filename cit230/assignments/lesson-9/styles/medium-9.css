@@ -181,10 +181,6 @@
         opacity: .5;
     }
     
-    .empty {
-        margin-left: 1em;
-    }
-    
     .wrap {
         width: 33%;
         float: left;
