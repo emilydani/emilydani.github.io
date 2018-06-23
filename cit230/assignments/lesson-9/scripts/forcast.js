@@ -1,5 +1,5 @@
 var weatherObject = new XMLHttpRequest();
-weatherObject.open('GET','http://api.openweathermap.org/data/2.5/weather?zip=83127,us&appid=8928a9fd9cf320451b8f6d922f405929&units=imperial',true);
+weatherObject.open('GET','//api.openweathermap.org/data/2.5/weather?zip=83127,us&appid=8928a9fd9cf320451b8f6d922f405929&units=imperial',true);
 
 weatherObject.send();
 
@@ -12,7 +12,7 @@ weatherObject.onload = function() {
     document.getElementById('currentWind').innerHTML = weatherInfo.wind.speed;
     
     var iconcode = weatherInfo.weather[0].icon;
-    var icon_path = "http://openweathermao.org/img/w/" + iconcode + ".png";
+    var icon_path = "//openweathermao.org/img/w/" + iconcode + ".png";
     document.getElementById('weather_icon').src = icon_path;
     
 }
