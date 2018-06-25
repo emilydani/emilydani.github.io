@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en-us">
+<head> 
+    <style>
+    @import url('https://fonts.googleapis.com/css?family=IBM+Plex+Sans:700');
+    </style>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="styles/normalize-10.css">
+    <link rel="stylesheet" href="styles/main-10.css">
+    <link rel="stylesheet" href="styles/medium-10.css">
+    <link rel="stylesheet" href="styles/large-10.css">
+    <link rel="stylesheet" href="styles/form-10.css">
+    <title>Franklin Page</title>
+    <meta name="description" content="Weather page for the town Frankin.">
+</head>
+<body>
+
+  <header>
+      <h1 class="pad">Accurate Weather</h1>
+      <p class="subheading">Easy. Simple. Fast. </p>
+  </header>
+
+  <nav class="clearfix">
+   <button class="hamburger" onclick="toggleMenu()">&#9776;</button>
+    <ul id="primaryNav" class="hide">
+     	<li><a href="index.html" title="Home">Home</a></li>
+    	<li><a class="active" href="franklin-9.html">Franklin</a></li>
+    	<li><a href="gallery-9.html">Greenville</a></li>
+    	<li><a href="#">Springfield</a></li>
+    	<li><a href="stormcenter-9.html">Storm</a></li>
+    	<li><a href="gallery-9.html">Gallery</a></li>
+    </ul>		
+  </nav>
+    
+  <main>
+    <figure>
+        <img class="figure" src="imges/figure.jpg"
+         
+          alt="pine trees with birds">    
+    </figure>
+    
+    <h2>Franklin Weather</h2>
+             
+<section class="weather-summary">
+  <div>
+  	<p>Sunny</p>
+  	<picture>
+    	<img class="sun" src="imges/sun.jpg" alt="yellow sun"
+    	srcset= "imges/large-sun.jpg 1100w,
+    	         imges/meduim-sun.jpg 800w,
+    	         imges/small-sun.jpg 600w">
+    </picture>
+   </div>  
+  <div>
+      <p>Temperture: <span id="temp"></span>&deg;</p> <br>
+      <p>Wind Speed <span id="windSpeed"></span> mph;</p>
+  </div>
+  <div>  
+    <p>Wind Chill <span id="windChill"></span>&deg;</p>       
+</div>
+</section>
+
+    <section class="padd">                  
+    <section class="forecast">
+      <h3>Ten Day Forecast</h3>
+      <table id="customers">
+        <thead>
+          <tr>
+            <th>Day 1</th>
+            <th>Day 2</th>
+            <th>Day 3</th>
+            <th>Day 4</th>
+            <th>Day 5</th>
+            <th>Day 6</th>
+            <th>Day 7</th>
+            <th>Day 8</th>
+            <th>Day 9</th>
+            <th>Day 10</th>
+          </tr>
+	</thead>
+        <tbody>  
+          <tr>
+            <td>89&deg;F</td>
+            <td>87&deg;F</td>
+            <td>78&deg;F</td>
+            <td>75&deg;F</td>
+            <td>72&deg;F</td>
+            <td>72&deg;F</td>
+            <td>79&deg;F</td>
+            <td>83&deg;F</td>
+            <td>85&deg;F</td>
+            <td>89&deg;F</td>
+          </tr>
+	</tbody>
+</table>
+    </section>
+      <p></p>
+    <article>
+      <h3>Franklin Breaks Record</h3>
+      <div class="cloud">
+        <picture class="al">
+            <img class="ak" src="imges/cloud.jpg" alt="clouds">
+        </picture>
+    <section class="headings">
+	  <p> Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.  
+     </p>
+	</section>
+	</div>
+    </article>
+    <section>
+        <h2>Forcast:</h2>
+        <h3>Weather conditions for <span id="place">city</span></h3>
+        <p>Current Temperature is <span id="currentTemp">00</span>&deg;</p>
+        <p>Wind Speed is <span id="currentWind">00</span></p>
+        <img src="imges/placeholder.png" alt="current weather" id="weather_icon">
+    </section>
+    </section>		  
+  
+  </main>
+    
+  <footer>
+    <div class="padd">
+      Contact information placeholder
+      999.999.9999
+      123 Main St. Anytown, US 99999
+      Google Map
+    &copy;2018 | All Rights Reserved | Accurate Weather | <span id="demo"></span>, <span id="year"></span>
+    </div>
+  </footer>
+
+<script src="scripts/current-date-10.js"></script>
+<script src="scripts/hamburger-10.js"></script>
+<script src="scripts/windchill-10.js"></script>
+<script src="scripts/forcast-10.js"></script>
+</body>
+</html>
