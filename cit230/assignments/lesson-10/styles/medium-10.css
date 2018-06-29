@@ -151,7 +151,7 @@
         margin-left: .5em;
     }
     .red {
-        padding-top:
+        padding-top;
         display: grid;
         grid-template-columns: 1fr 1fr;
     }
