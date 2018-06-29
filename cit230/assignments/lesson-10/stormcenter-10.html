@@ -1,19 +1,8 @@
 <!DOCTYPE html>
 <html lang="en-us">
-<head> 
-    <style>
-    @import url('https://fonts.googleapis.com/css?family=IBM+Plex+Sans:700');
-    </style>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" href="styles/normalize-10.css">
-    <link rel="stylesheet" href="styles/main-10.css">
-    <link rel="stylesheet" href="styles/medium-10.css">
-    <link rel="stylesheet" href="styles/large-10.css">
-    <link rel="stylesheet" href="styles/form-10.css">
+    <head includefile="modules/head.html">
+    </head>
     <title>Storm Center</title>
-    <meta name="description" content="Weather page for the town Frankin.">
-</head>
 <body>
 
   <header>
@@ -21,17 +10,8 @@
       <p class="subheading">Easy. Simple. Fast. </p>
   </header>
 
-   <nav class="clearfix">
-   <button class="hamburger" onclick="toggleMenu()">&#9776;</button>
-    <ul id="primaryNav" class="hide">
-    	<li><a class="active" href="index-10.html" title="Home">Home</a></li>
-    	<li><a href="franklin-10.html">Franklin</a></li>
-    	<li><a href="greenville.html">Greenville</a></li>
-    	<li><a href="springfield.html">Springfield</a></li>
-    	<li><a href="stormcenter-10.html">Storm</a></li>
-    	<li><a href="gallery-10.html">Gallery</a></li>
-    </ul>		
-  </nav>
+   <nav includefile="modules/nav.html">		
+   </nav>
     
   <main class="pad">
     <h2>Storm Center</h2>
@@ -106,19 +86,14 @@
   
   </main>
     
-  <footer>
-    <div class="padd">
-      Contact information placeholder
-      999.999.9999
-      123 Main St. Anytown, US 99999
-      Google Map
-    &copy;2018 | All Rights Reserved | Accurate Weather | <span id="demo"></span>, 2018
-    </div>
-  </footer>
+<footer includefiles="modules/footer.html">  
+</footer>
 
+<script src="scripts/include.js"></script>
 <script src="scripts/current-date-10.js"></script>
 <script src="scripts/hamburger-10.js"></script>
 <script src="scripts/windchill-10.js"></script>
 <script src="scripts/storm-10.js"></script>
+<script src="scripts/wayfinding.js"></script>
 </body>
 </html>

@@ -14,6 +14,6 @@ weatherObject.onload = function() {
     var iconcode = weatherInfo.weather[0].icon;
     var icon_path = "//openweathermap.org/img/w/" + iconcode + ".png";   
     
-document.getElementById('weather_icon').src = icon_path;
+document.getElementById('weather_ion').src = icon_path;
     
 }

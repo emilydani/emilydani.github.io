@@ -1,3 +1,5 @@
+function setCurrentDate()
+{
 var dayName = new Array("Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday");
 
 var now = new Date();
@@ -13,3 +15,4 @@ document.getElementById("demo").innerHTML = dtString;
 var d = new Date();
 var n = d.getFullYear();
 document.getElementById("year").innerHTML = n;
+}
