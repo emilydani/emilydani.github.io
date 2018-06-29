@@ -176,12 +176,7 @@ h1 {
         text-align: center;
     }
 
-    main figure {
-        margin: 0 0 .2rem;
-        width: 100%;
-    }
-
-    main figure img {
+    .figure {
         width: 100%;
     }
 

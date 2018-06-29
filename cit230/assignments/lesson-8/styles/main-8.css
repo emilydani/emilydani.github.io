@@ -16,12 +16,13 @@ h2,
 h1,
 header,
 nav,
-h3{
+h3 {
     font-family: 'IBM Plex Sans', bahnschrift, arial, sans;
 }
 
 p,
-table, footer {
+table,
+footer {
     font-family: arial, sans;
 }
 
@@ -57,36 +58,38 @@ nav button {
     margin: .2rem 2%;
     border: #333;
     font-size: 1.6rem;
-    color:#555;
+    color: #555;
     background-color: transparent
 }
 
 
 nav ul {
-    list-style-type:none;
-    padding:0;
+    list-style-type: none;
+    padding: 0;
     background-color: black;
 }
 
-nav ul.hide {display:none;}
+nav ul.hide {
+    display: none;
+}
 
 nav ul li {}
 
 nav ul li a {
-    color:white;
+    color: white;
     display: block;
     padding: .8rem 2%;
     text-decoration: none;
-    border-top:1px solid rgba(0,0,0,0.3);
+    border-top: 1px solid rgba(0, 0, 0, 0.3);
 }
 
 .active {
-        background-color: #E57A44;
-    }
+    background-color: #E57A44;
+}
 
 nav ul li a:hover {
-    background-color:#333;
-    color:white
+    background-color: #333;
+    color: white
 }
 
 * {
@@ -99,7 +102,7 @@ h1 {
 }
 
 .hamburger {
-    margin-left:2rem;
+    margin-left: 2rem;
 }
 
 .navigation {
@@ -176,12 +179,7 @@ h1 {
         text-align: center;
     }
 
-    main figure {
-        margin: 0 0 .2rem;
-        width: 100%;
-    }
-
-    main figure img {
+    .figure {
         width: 100%;
     }
 
@@ -215,12 +213,11 @@ h1 {
         float: right;
         margin-left: 1em;
     }*/
-    
     .cloud {
-	display: flex;
-	flex-direction: row;
-    min-width: 25em;
-    margin: 10px auto;
+        display: flex;
+        flex-direction: row;
+        min-width: 25em;
+        margin: 10px auto;
     }
 
     .al {
@@ -254,21 +251,21 @@ h1 {
     .ran {
         max-width: 1100px;
     }
-    
+
     .grid {
         display: grid;
         grid-template-columns: 1fr;
         align-content: center;
     }
-    
+
     .grid img {
-        width: 90%; 
+        width: 90%;
         padding-bottom: 1em;
         padding-top: 1em;
         padding-left: 1em;
         align-content: center;
     }
-    
+
     .im:hover {
         box-shadow: 4px 4px 9px grey;
         opacity: .5;
@@ -276,5 +273,5 @@ h1 {
     .empty {
         margin-left: 1em;
     }
-    
+
 }

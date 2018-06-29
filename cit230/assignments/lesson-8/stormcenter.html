@@ -37,27 +37,27 @@
     <h2>Storm Center</h2>
         <form action="thanks.html" method="get">
           <div>
-           <label for="fullName">Full Name</label>
+           <label>Full Name</label>
             <input type="text" id="fullName" name="fullname" title="A minimum of 5 characters are required" pattern="[A-Za-z -]{5,}" required>
           </div>
            <div>
-               <label for="email">Email</label>
+               <label>Email</label>
                <input type="email" id="email" name="email" placeholder="name@gmail.com">
            </div>
            <div>
-               <label for="phoneNumber">Phone Number</label>
+               <label>Phone Number</label>
                <input type="tel" id="phoneNumber" name="phoneNumber" required>
            </div>
            <div>
-               <label for="zipCode">Zip Code</label>
+               <label>Zip Code</label>
                <input type="number" id="number" name="zipCode" required>
            </div>
            <div>
-              <label for="date">Date</label>
+              <label>Date</label>
                <input type="date" name="date">
            </div>
            <div>
-               <label for="stormDate">Storm Date</label>
+               <label>Storm Date</label>
                <input list="list">
                <datalist name="stormedate" id="list">
                   <option value="Flash Flood"></option>
@@ -68,13 +68,13 @@
                </datalist>
            </div>
            <div>
-                <label for="rating">Rating (1 to 10)</label>
+                <label>Rating (1 to 10)</label>
                 <input type="range" id="rating" name="rating" value="5" min="1" max="10" step="1" oninput="adjustRating(this.value)" onchange="adjustRating(this.value)">
                 <span id="ratingvalue">5
                 </span><br>
            </div>
            <div>
-               <label for="stormRegion">Storm Region</label>
+               <label>Storm Region</label>
                <select name="options" id="options">
                    <option value="disabled " disabled>Select Option</option>
                    <option value="franklin">Franklin</option>
@@ -86,11 +86,11 @@
                <span>Are you in danger?</span>
             <div>
                <input type="radio" name="danger" value="Yes">
-               <label for="Yes">Yes</label>
+               <label>Yes</label>
                <input type="radio" name="danger" value="No">
-               <label for="No">No</label>
+               <label>No</label>
                <input type="radio" name="danger" value="Maybe">
-               <label for="Maybe">Maybe</label>
+               <label>Maybe</label>
             </div>
            </div>
           <div>

@@ -38,6 +38,9 @@
         float: left;
     }*/
     
+     .figure {
+        width: 100%;
+    }
     nav li { }
 
     li a {

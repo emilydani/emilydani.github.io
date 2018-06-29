@@ -50,6 +50,10 @@
         margin-right: 10px;
     }
     
+        .figure {
+        width: 100%;
+    }
+    
     ul {
         display: flex;
         flex-direction: row;
