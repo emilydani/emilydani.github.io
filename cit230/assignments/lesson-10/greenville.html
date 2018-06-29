@@ -1,9 +1,9 @@
 <!DOCTYPE html>
 <html lang="en-us">
 
-    <head w3-include-html="modules/head.html">
-    </head> 
-    <title>Greenville</title>
+<head w3-include-html="modules/head.html">
+</head>
+<title>Greenville</title>
 
 <body>
     <header>
@@ -11,27 +11,62 @@
         <p class="subheading">Easy. Simple. Fast. </p>
     </header>
 
-   <nav w3-include-html="modules/nav.html">		
-   </nav>
+    <nav w3-include-html="modules/nav.html">
+    </nav>
 
     <main>
-        <h2>Greenville</h2>
-        <div>
-            <img class="green" src="imges/cloud.jpg" alt="fluffy white clouds">
-            <img class="green" src="imges/cloud.jpg" alt="fluffy white clouds">
-            <img class="green" src="imges/cloud.jpg" alt="fluffy white clouds">
-        </div>
-
+        <h1>Greenville</h1>
+        <section class="forecast">
+            <h3>Ten Day Forecast</h3>
+            <table id="customers">
+                <thead>
+                    <tr>
+                        <th>Day 1</th>
+                        <th>Day 2</th>
+                        <th>Day 3</th>
+                        <th>Day 4</th>
+                        <th>Day 5</th>
+                        <th>Day 6</th>
+                        <th>Day 7</th>
+                        <th>Day 8</th>
+                        <th>Day 9</th>
+                        <th>Day 10</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>89&deg;F</td>
+                        <td>87&deg;F</td>
+                        <td>78&deg;F</td>
+                        <td>75&deg;F</td>
+                        <td>72&deg;F</td>
+                        <td>72&deg;F</td>
+                        <td>79&deg;F</td>
+                        <td>83&deg;F</td>
+                        <td>85&deg;F</td>
+                        <td>89&deg;F</td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+        <section>
+            <h2>Forcast:</h2>
+            <h3>Weather conditions for <span id="place">city</span></h3>
+            <p>Current Temperature is <span id="currentTemp">00</span>&deg;</p>
+            <p>Wind Speed is <span id="currentWind">00</span></p>
+            <img src="imges/placeholder.png" alt="current weather" id="weather_icon">
+        </section>
 
     </main>
-<footer w3-include-html="modules/footer.html">  
-</footer>
+    <footer w3-include-html="modules/footer.html">
+    </footer>
 
-<script src="scripts/w3.js"></script>
-<script src="scripts/current-date-10.js"></script>
-<script src="scripts/includehtml.js"></script>
-<script src="scripts/hamburger-10.js"></script>
-<script src="scripts/wayfinding.js"></script>
+    <script src="scripts/w3.js"></script>
+    <script src="scripts/current-date-10.js"></script>
+    <script src="scripts/includehtml.js"></script>
+    <script src="scripts/hamburger-10.js"></script>
+    <script src="scripts/wayfinding.js"></script>
+    <script src="scripts/forcast-g.js"></script>
 
 </body>
 
