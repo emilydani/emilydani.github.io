@@ -1,4 +1,7 @@
- var urlString, urlArray, pageHREF, menu, i, currentURL;
+function setActiveLink() { 
+    document.getElementById("call").innerHTML = "called"
+    
+var urlString, urlArray, pageHREF, menu, i, currentURL;
         urlString = document.location.href;
         urlArray = urlString.split('/');
         pageHREF = urlArray[urlArray.length - 1];
@@ -13,26 +16,5 @@
                 }
             }
         }
-////var w3 = {};
-////w3.includeHTML=function(cb) {
-////    var z, i, elmnt, file, xhttp;
-////    z= document.getElementsByTagName("*");
-////    for (i= 0; i<z.length; i++){
-////        elmnt= z[i];
-////        file = elmnt.getAttribute("includefile");
-////        if (file) {
-////            xhttp = new XMLHttpRequest();
-////            xhttp.onreadystatechange=function() {
-////                if (this.readyState == 4&& this.status == 200){
-////                    elment.innerHTML = this.responseText +elmnt
-////                    .innerHTML;
-////                    elmnt.removeAttribute("includefile");
-////                    w3.includeHTML(cb);
-////                }
-////            }
-////            xhttp.open("GET", file, true);
-////            xhttp.send();
-////        }
-////    }
-////};
-// Perform wayfinding highlighting
+}
+
