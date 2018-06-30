@@ -6,11 +6,11 @@
     </style>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" href="styles/normalize-9.css">
-    <link rel="stylesheet" href="styles/main-9.css">
-    <link rel="stylesheet" href="styles/medium-9.css"> 
-    <link rel="stylesheet" href="styles/large-9.css">
-    <link rel="stylesheet" href="styles/form-9.css">
+    <link rel="stylesheet" href="styles/normalize-8.css">
+    <link rel="stylesheet" href="styles/main-8.css">
+    <link rel="stylesheet" href="styles/medium-8.css"> 
+    <link rel="stylesheet" href="styles/large-8.css">
+    <link rel="stylesheet" href="styles/form.css">
     <title>Storm Center</title>
     <meta name="description" content="Weather page for the town Frankin.">
 </head>
@@ -24,12 +24,12 @@
   <nav class="clearfix">
    <button class="hamburger" onclick="toggleMenu()">&#9776;</button>
     <ul id="primaryNav" class="hide">
-    	<li><a href="index.html" title="Home">Home</a></li>
-    	<li><a href="franklin-9.html">Franklin</a></li>
-    	<li><a href="gallery-9.html">Greenville</a></li>
+    	<li><a href="#" title="Home">Home</a></li>
+    	<li><a href="franklin-7.html">Franklin</a></li>
+    	<li><a href="#">Greenville</a></li>
     	<li><a href="#">Springfield</a></li>
-    	<li><a class="active" href="stormcenter-9.html">Storm</a></li>
-    	<li><a href="gallery-9.html">Gallery</a></li>
+    	<li><a class="active" href="#">Storm</a></li>
+    	<li><a href="#">Gallery</a></li>
     </ul>		
   </nav>
     
@@ -37,27 +37,27 @@
     <h2>Storm Center</h2>
         <form action="thanks.html" method="get">
           <div>
-           <label for="fullName">Full Name</label>
+           <label>Full Name</label>
             <input type="text" id="fullName" name="fullname" title="A minimum of 5 characters are required" pattern="[A-Za-z -]{5,}" required>
           </div>
            <div>
-               <label for="email">Email</label>
+               <label>Email</label>
                <input type="email" id="email" name="email" placeholder="name@gmail.com">
            </div>
            <div>
-               <label for="phoneNumber">Phone Number</label>
+               <label>Phone Number</label>
                <input type="tel" id="phoneNumber" name="phoneNumber" required>
            </div>
            <div>
-               <label for="zipCode">Zip Code</label>
+               <label>Zip Code</label>
                <input type="number" id="number" name="zipCode" required>
            </div>
            <div>
-              <label for="date">Date</label>
+              <label>Date</label>
                <input type="date" name="date">
            </div>
            <div>
-               <label for="stormDate">Storm Date</label>
+               <label>Storm Date</label>
                <input list="list">
                <datalist name="stormedate" id="list">
                   <option value="Flash Flood"></option>
@@ -68,13 +68,13 @@
                </datalist>
            </div>
            <div>
-                <label for="rating">Rating (1 to 10)</label>
+                <label>Rating (1 to 10)</label>
                 <input type="range" id="rating" name="rating" value="5" min="1" max="10" step="1" oninput="adjustRating(this.value)" onchange="adjustRating(this.value)">
                 <span id="ratingvalue">5
                 </span><br>
            </div>
            <div>
-               <label for="stormRegion">Storm Region</label>
+               <label>Storm Region</label>
                <select name="options" id="options">
                    <option value="disabled " disabled>Select Option</option>
                    <option value="franklin">Franklin</option>
@@ -86,11 +86,11 @@
                <span>Are you in danger?</span>
             <div>
                <input type="radio" name="danger" value="Yes">
-               <label for="Yes">Yes</label>
+               <label>Yes</label>
                <input type="radio" name="danger" value="No">
-               <label for="No">No</label>
+               <label>No</label>
                <input type="radio" name="danger" value="Maybe">
-               <label for="Maybe">Maybe</label>
+               <label>Maybe</label>
             </div>
            </div>
           <div>
@@ -101,7 +101,6 @@
            <div>
             <input type="submit" value="Save">
            </div><br>
-           
         </form> 
   
   </main>
@@ -116,9 +115,9 @@
     </div>
   </footer>
 
-<script src="scripts/current-date-9.js"></script>
-<script src="scripts/hamburger-9.js"></script>
-<script src="scripts/windchill-9.js"></script>
-<script src="scripts/storm-9.js"></script>
+<script src="scripts/current-date-8.js"></script>
+<script src="scripts/hamburger-8.js"></script>
+<script src="scripts/windchill-8.js"></script>
+<script src="scripts/storm.js"></script>
 </body>
 </html>

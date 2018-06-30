@@ -1,8 +1,19 @@
 <!DOCTYPE html>
 <html lang="en-us">
-    <head w3-include-html="modules/head.html">
+<head> 
+    <style>
+    @import url('https://fonts.googleapis.com/css?family=IBM+Plex+Sans:700');
+    </style>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="styles/normalize-8.css">
+    <link rel="stylesheet" href="styles/main-8.css">
+    <link rel="stylesheet" href="styles/medium-8.css"> 
+    <link rel="stylesheet" href="styles/large-8.css">
+    <link rel="stylesheet" href="styles/form.css">
     <title>Storm Center</title>
-    </head>
+    <meta name="description" content="Weather page for the town Frankin.">
+</head>
 <body>
 
   <header>
@@ -10,34 +21,43 @@
       <p class="subheading">Easy. Simple. Fast. </p>
   </header>
 
-   <nav w3-include-html="modules/nav.html">		
-   </nav>
+  <nav class="clearfix">
+   <button class="hamburger" onclick="toggleMenu()">&#9776;</button>
+    <ul id="primaryNav" class="hide">
+    	<li><a href="#" title="Home">Home</a></li>
+    	<li><a href="franklin-7.html">Franklin</a></li>
+    	<li><a href="#">Greenville</a></li>
+    	<li><a href="#">Springfield</a></li>
+    	<li><a class="active" href="#">Storm</a></li>
+    	<li><a href="#">Gallery</a></li>
+    </ul>		
+  </nav>
     
   <main>
     <h2>Storm Center</h2>
         <form action="thanks.html" method="get">
           <div>
-           <label for="fullName">Full Name</label>
+           <label>Full Name</label>
             <input type="text" id="fullName" name="fullname" title="A minimum of 5 characters are required" pattern="[A-Za-z -]{5,}" required>
           </div>
            <div>
-               <label for="email">Email</label>
+               <label>Email</label>
                <input type="email" id="email" name="email" placeholder="name@gmail.com">
            </div>
            <div>
-               <label for="phoneNumber">Phone Number</label>
+               <label>Phone Number</label>
                <input type="tel" id="phoneNumber" name="phoneNumber" required>
            </div>
            <div>
-               <label for="zipCode">Zip Code</label>
+               <label>Zip Code</label>
                <input type="number" id="number" name="zipCode" required>
            </div>
            <div>
-              <label for="date">Date</label>
+              <label>Date</label>
                <input type="date" name="date">
            </div>
            <div>
-               <label for="stormDate">Storm Date</label>
+               <label>Storm Date</label>
                <input list="list">
                <datalist name="stormedate" id="list">
                   <option value="Flash Flood"></option>
@@ -48,13 +68,13 @@
                </datalist>
            </div>
            <div>
-                <label for="rating">Rating (1 to 10)</label>
+                <label>Rating (1 to 10)</label>
                 <input type="range" id="rating" name="rating" value="5" min="1" max="10" step="1" oninput="adjustRating(this.value)" onchange="adjustRating(this.value)">
                 <span id="ratingvalue">5
                 </span><br>
            </div>
            <div>
-               <label for="stormRegion">Storm Region</label>
+               <label>Storm Region</label>
                <select name="options" id="options">
                    <option value="disabled " disabled>Select Option</option>
                    <option value="franklin">Franklin</option>
@@ -66,11 +86,11 @@
                <span>Are you in danger?</span>
             <div>
                <input type="radio" name="danger" value="Yes">
-               <label for="Yes">Yes</label>
+               <label>Yes</label>
                <input type="radio" name="danger" value="No">
-               <label for="No">No</label>
+               <label>No</label>
                <input type="radio" name="danger" value="Maybe">
-               <label for="Maybe">Maybe</label>
+               <label>Maybe</label>
             </div>
            </div>
           <div>
@@ -81,19 +101,23 @@
            <div>
             <input type="submit" value="Save">
            </div><br>
-           
         </form> 
   
   </main>
     
-<footer w3-include-html="modules/footer.html">  
-</footer>
+  <footer>
+    <div class="padd">
+      Contact information placeholder
+      999.999.9999
+      123 Main St. Anytown, US 99999
+      Google Map
+    &copy;2018 | All Rights Reserved | Accurate Weather | <span id="demo"></span>
+    </div>
+  </footer>
 
-<script src="scripts/w3.js"></script>
-<script src="scripts/current-date.js"></script>
-<script src="scripts/includehtml.js"></script>
-<script src="scripts/hamburger.js"></script>
+<script src="scripts/current-date-8.js"></script>
+<script src="scripts/hamburger-8.js"></script>
+<script src="scripts/windchill-8.js"></script>
 <script src="scripts/storm.js"></script>
-<script src="scripts/wayfinding.js"></script>
 </body>
 </html>
