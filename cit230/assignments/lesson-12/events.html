@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en-us">
+
+<head>
+    <title>Mountain Spoke</title>
+    <meta charset="utf-8">
+    <style>
+        @import url('https://fonts.googleapis.com/css?family=IBM+Plex+Sans:700');
+    </style>
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="stylesheet" href="styles/main.css">
+    <link rel="stylesheet" href="styles/medium.css">
+    <link rel="stylesheet" href="styles/large.css">
+    <link rel="stylesheet" href="styles/form.css">
+</head>
+
+<body>
+    <header>
+        <h1>The Mountain Spoke</h1>
+    </header>
+    <nav class="clearfix">
+        <button class="hamburger" onclick="toggleMenu()">&#9776;</button>
+        <ul id="primaryNav" class="hide">
+            <li><a href="index.html" title="Home">Home</a></li>
+            <li><a href="tours.html">Tours</a></li>
+            <li><a href="service.html">Services</a></li>
+            <li><a href="sales.html">Sales</a></li>
+            <li><a href="events.html">Events</a></li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
+    </nav>
+
+    <main>
+    
+    <h1>Events</h1>
+    <h2>Cycle the Continental Divide</h2>
+        <p>Come cycle the continential divide with us! We will be cycling the Red Rock Pass on <b>Augugust 12, 2018</b>.The biking enting fee will <b>$10.50</b> and you must be older than the age of 18. Water bottles, maps, shirts will be provided. </p>
+  
+    <fieldset>
+       <legend>Register Now!</legend>
+        <form action="thanks.html" method="get">
+          <div>
+           <label>Full Name</label>
+            <input type="text" id="fullName" name="fullname" title="A minimum of 5 characters are required" pattern="[A-Za-z -]{5,}" required>
+          </div>
+           <div>
+               <label>Email</label>
+               <input type="email" id="email" name="email" placeholder="name@gmail.com">
+           </div>
+           <div>
+               <label>Phone Number</label>
+               <input type="tel" id="phoneNumber" name="phoneNumber" required>
+           </div>
+           <div>
+               <label>T-shirt Size</label>
+               <input list="list">
+               <datalist name="stormedate" id="list">
+                  <option value="Small"></option>
+                  <option value="Meduim"></option>
+                  <option value="Large"></option>
+                  <option value="X-Large"></option>  
+                  <option value="I don't want one"></option>
+               </datalist>
+           </div>
+           <div>
+               <label>Experince Level</label>
+               <select name="options" id="options">
+                   <option value="disabled " disabled>Select Option</option>
+                   <option value="Advanced">Advanced</option>
+                   <option value="Intermediate"> Intermediate</option>
+                   <option value="Beginner">Beginner</option>
+               </select>
+           </div>
+           <div>
+               <span>Are you paying?</span>
+            <div>
+               <input type="radio" name="danger" value="In person">
+               <label>In person</label>
+               <input type="radio" name="danger" value="Online">
+               <label>Online</label>
+            </div>
+           </div><br>
+        </form> 
+        </fieldset><br>
+     
+
+
+    </main>
+    <footer>
+        <div class="padd">
+            Mountian Spoke | 3950 Valley Commons Drive Bozeman, MT | <span id="demo"></span>
+        </div>
+    </footer>
+
+    <script src="scripts/w3.js"></script>
+    <script src="scripts/wayfinding.js"></script>
+    <script src="scripts/hamburger.js"></script>
+    <script src="scripts/current-date.js"></script>
+</body>
+
+</html>

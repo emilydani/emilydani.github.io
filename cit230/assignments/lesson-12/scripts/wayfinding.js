@@ -1,4 +1,3 @@
-function setActiveLink() {     
 var urlString, urlArray, pageHREF, menu, i, currentURL;
         urlString = document.location.href;
         urlArray = urlString.split('/');
@@ -14,4 +13,4 @@ var urlString, urlArray, pageHREF, menu, i, currentURL;
                 }
             }
         }
-}
+

@@ -1,19 +1,7 @@
 <!DOCTYPE html>
 <html lang="en-us">
-<head> 
-    <style>
-    @import url('https://fonts.googleapis.com/css?family=IBM+Plex+Sans:700');
-    </style>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" href="styles/normalize-8.css">
-    <link rel="stylesheet" href="styles/main-8.css">
-    <link rel="stylesheet" href="styles/medium-8.css"> 
-    <link rel="stylesheet" href="styles/large-8.css">
-    <link rel="stylesheet" href="styles/form.css">
-    <title>Storm Center</title>
-    <meta name="description" content="Weather page for the town Frankin.">
-</head>
+    <head w3-include-html="modules/head.html"></head>
+<title>Storm center</title>
 <body>
 
   <header>
@@ -21,17 +9,8 @@
       <p class="subheading">Easy. Simple. Fast. </p>
   </header>
 
-  <nav class="clearfix">
-   <button class="hamburger" onclick="toggleMenu()">&#9776;</button>
-    <ul id="primaryNav" class="hide">
-    	<li><a href="#" title="Home">Home</a></li>
-    	<li><a href="franklin-7.html">Franklin</a></li>
-    	<li><a href="#">Greenville</a></li>
-    	<li><a href="#">Springfield</a></li>
-    	<li><a class="active" href="#">Storm</a></li>
-    	<li><a href="#">Gallery</a></li>
-    </ul>		
-  </nav>
+   <nav w3-include-html="modules/nav.html">		
+   </nav>
     
   <main>
     <h2>Storm Center</h2>
@@ -105,19 +84,15 @@
   
   </main>
     
-  <footer>
-    <div class="padd">
-      Contact information placeholder
-      999.999.9999
-      123 Main St. Anytown, US 99999
-      Google Map
-    &copy;2018 | All Rights Reserved | Accurate Weather | <span id="demo"></span>
-    </div>
-  </footer>
+<footer w3-include-html="modules/footer.html">  
+</footer>
 
+<script src="scripts/w3.js"></script>
+<script src="scripts/includehtml.js"></script>
 <script src="scripts/current-date-8.js"></script>
 <script src="scripts/hamburger-8.js"></script>
 <script src="scripts/windchill-8.js"></script>
+<script src="scripts/wayfinding.js"></script>
 <script src="scripts/storm.js"></script>
 </body>
 </html>
