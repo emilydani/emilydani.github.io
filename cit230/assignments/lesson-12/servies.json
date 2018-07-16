@@ -1,0 +1,21 @@
+{
+    "services":
+    [
+        {
+        "name":"drive train clean",
+        "price":60
+        },
+        {
+        "name":"bike assemby",
+        "price":60
+        },
+        {
+        "name":"bike breed",
+        "price":25
+        },
+        {
+        "name":"brake overhaul",
+        "price":35
+        }
+    ]
+}

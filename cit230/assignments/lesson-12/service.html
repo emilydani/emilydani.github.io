@@ -1,12 +1,55 @@
 <!DOCTYPE html>
-<html lang="">
+<html lang="en-us">
+
 <head>
+    <title>Mountain Spoke</title>
     <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title></title>
+    <style>
+        @import url('https://fonts.googleapis.com/css?family=IBM+Plex+Sans:700');
+    </style>
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="stylesheet" href="styles/main.css">
+    <link rel="stylesheet" href="styles/medium.css">
+    <link rel="stylesheet" href="styles/large.css">
 </head>
 
 <body>
-    
+    <header>
+    <img src="images/logo.jpg" alt="company logo">
+    </header>
+    <nav class="clearfix">
+        <button class="hamburger" onclick="toggleMenu()">&#9776;</button>
+        <ul id="primaryNav" class="hide">
+            <li><a href="index.html" title="Home">Home</a></li>
+            <li><a href="tours.html">Tours</a></li>
+            <li><a href="service.html">Services</a></li>
+            <li><a href="sales.html">Sales</a></li>
+            <li><a href="events.html">Events</a></li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
+    </nav>
+
+    <main>
+
+        <h1>Bike Services</h1>
+        <table>
+            <tr>
+                <th>Name</th>
+                <th>Price</th>
+            </tr>
+        </table>
+
+    </main>
+    <footer>
+        <div class="padd">
+            Mountian Spoke | 3950 Valley Commons Drive Bozeman, MT | <span id="demo"></span> | <a href="source.html">source material</a>
+        </div>
+    </footer>
+    <scripts src="data.js"></scripts>
+    <script src="scripts/wayfinding.js"></script>
+    <script src="scripts/hamburger.js"></script>
+    <script src="scripts/current-date.js"></script>
+    <script src="//code.jquery.com/jquery-1.12.4.js"></script>
 </body>
+
 </html>

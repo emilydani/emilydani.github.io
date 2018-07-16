@@ -12,18 +12,21 @@ section.forecast {
     display: none;
 }
 
+h1 {
+    font-family: 'Merienda', cursive;
+}
+
 h2,
-h1,
 header,
 nav,
 h3 {
-    font-family: 'IBM Plex Sans', bahnschrift, arial, sans;
+    font-family: 'georgia,' serif;
 }
 
 p,
 table,
 footer {
-    font-family: arial, sans;
+    font-family: 'georgia,' serif;
 }
 
 header,
@@ -88,7 +91,7 @@ nav ul li a {
 }
 
 nav ul li a:hover {
-    background-color: #333;
+    background-color: #444;
     color: white;
 }
 
@@ -161,8 +164,6 @@ h1 {
         .navigation a:hover {
             color: #000;
             background-color: #777;
-            padding-left: .25em;
-            padding-right: .25em;
         }
     }
     main {
@@ -290,6 +291,14 @@ h1 {
         padding: .5em;
         color: white;
         box-shadow: 4px 4px 9px grey;
+    }
+    
+    .bike {
+        display: none;
+    }
+    
+    .none {
+        display: none;
     }
 
 

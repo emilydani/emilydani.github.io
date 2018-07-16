@@ -11,6 +11,7 @@
     <link rel="stylesheet" href="styles/main.css">
     <link rel="stylesheet" href="styles/medium.css">
     <link rel="stylesheet" href="styles/large.css">
+    <link rel="stylesheet" href="styles/form.css">
 </head>
 
 <body>
@@ -32,20 +33,45 @@
     <main>
 
         <h1>Contact Us</h1>
-        <section class="red">
-            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2787.9316267201866!2d-111.0907175!3d45.672272899999996!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x5345459ab72cb6df%3A0xbb98968f9648ea88!2s3950+Valley+Commons+Dr%2C+Bozeman%2C+MT+59718!5e0!3m2!1sen!2sus!4v1531448244680" width="600" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
-            <div>
+        <section class="grid">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2787.9316267201866!2d-111.0907175!3d45.672272899999996!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x5345459ab72cb6df%3A0xbb98968f9648ea88!2s3950+Valley+Commons+Dr%2C+Bozeman%2C+MT+59718!5e0!3m2!1sen!2sus!4v1531448244680" width="400" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
+            <div class="pad">
+                <h2>Contact information</h2>
                 <p>Address: 3950 Valley Commons Drive Bozeman, MT</p>
                 <p>Email: mountainspoke@gmail.com</p>
                 <p>Phone: 999-999-9999</p>
             </div>
+            <fieldset>
+                <legend>Contact us</legend>
+                <form action="thanks.html" method="get">
+                    <div>
+                        <label>Full Name</label>
+                        <input type="text" id="fullName" name="fullname" title="A minimum of 5 characters are required" pattern="[A-Za-z -]{5,}" required>
+                    </div>
+                    <div>
+                        <label>Email</label>
+                        <input type="email" id="email" name="email" placeholder="name@gmail.com">
+                    </div>
+                    <div>
+                        <label>Phone Number</label>
+                        <input type="tel" id="phoneNumber" name="phoneNumber" required>
+                    </div>
+                    <div>
+                        <label for="comment">Why are you contacting us?</label><br>
+                        <textarea name="message" id="comment" cols="30" rows="10"></textarea>
+                    </div>
+                    <div>
+                        <input type="submit" value="Save">
+                    </div><br>
+                </form>
+            </fieldset><br>
         </section>
 
 
     </main>
     <footer>
         <div class="padd">
-            Mountian Spoke | 3950 Valley Commons Drive Bozeman, MT | <span id="demo"></span>
+            Mountian Spoke | 3950 Valley Commons Drive Bozeman, MT | <span id="demo"></span> | <a href="source.html">source material</a>
         </div>
     </footer>
 
