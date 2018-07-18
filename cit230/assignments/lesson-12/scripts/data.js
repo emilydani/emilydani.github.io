@@ -1,9 +1,9 @@
-var requestURL = 'servies.json'; //paste town URL here
+var requestURL = 'data/servies.json'; 
 
 var request = new XMLHttpRequest();
 request.open('GET', requestURL);
 request.responseType = 'json';
-request.send(); //copy paste to here
+request.send(); 
 
 request.onload = function () {
     var services = request.response;
