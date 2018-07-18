@@ -2,19 +2,19 @@
     "services":
     [
         {
-        "name":"drive train clean",
+        "name":"Drive train clean",
         "price":60
         },
         {
-        "name":"bike assemby",
+        "name":"Bike assemby",
         "price":60
         },
         {
-        "name":"bike breed",
+        "name":"Bike breed",
         "price":25
         },
         {
-        "name":"brake overhaul",
+        "name":"Brake overhaul",
         "price":35
         }
     ]
