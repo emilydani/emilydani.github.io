@@ -1,16 +1,16 @@
-var requestURL = 'data/servies.json'; 
+var requestURL = 'scripts/servies.json'; 
 
 var request = new XMLHttpRequest();
 request.open('GET', requestURL);
 request.responseType = 'json';
-request.send(); 
+request.send();
 
 request.onload = function () {
-    var services = request.response;
+    var services = request.response.services;
 
-    console.log(response);
+    console.log(services);
 
-    $.each(response.service, function (i, item) {
+    $.each(services, function (i, item) {
         var tr = $('<tr>').append(
             $('<th>').text(item.name),
             $('<th>').text('$' + item.price.toFixed(2))
