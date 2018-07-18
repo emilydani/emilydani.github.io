@@ -189,7 +189,6 @@ h1 {
         overflow: hidden;
         background-color: #333;
         color: #F5F5F5;
-        text-align: center;
         margin-left: 2em;
         margin-right: 2em;
     }
@@ -300,6 +299,22 @@ h1 {
     .none {
         display: none;
     }
+    
+    table {
+    font-family: arial, sans-serif;
+    border-collapse: collapse;
+    width: 100%;
+}
+
+td, th {
+    border: 1px solid #dddddd;
+    text-align: left;
+    padding: 8px;
+}
+
+tr:nth-child(even) {
+    background-color: #dddddd;
+}
 
 
 }

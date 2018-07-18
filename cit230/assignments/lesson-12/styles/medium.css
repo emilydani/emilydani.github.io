@@ -99,8 +99,6 @@
         background-color: #333;
         overflow: hidden;
         color: #F5F5F5;
-        text-align: center;
-        display: flex;
     }
     .weather-summary {
         display: flex;
